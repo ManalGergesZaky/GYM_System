@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="GymProject">
+  <ClassDiagramComponents>
+    <Class name="Admin" package="Admain" visibility="public" xPosition="1204.0" yPosition="870.0">
+      <Fields>
+        <Field name="p1" type="Panal" visibility="private"/>
+        <Field name="Trainer" type="JButton" visibility="private"/>
+        <Field name="Classes" type="JButton" visibility="private"/>
+        <Field name="Members" type="JButton" visibility="private"/>
+        <Field name="l1" type="JLabel" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="actionPerformed" returnType="void" visibility="public">
+          <Argument type="ActionEvent" name="e"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Classes" package="Admain" visibility="public" xPosition="202.0" yPosition="473.0">
+      <Fields>
+        <Field name="mode" type="DefaultTableModel" visibility="private"/>
+        <Field name="table" type="JTable" visibility="private"/>
+        <Field name="s1" type="JScrollPane" visibility="private"/>
+        <Field name="l" type="JLabel" visibility="private"/>
+        <Field name="name" type="JLabel" visibility="private"/>
+        <Field name="trainername" type="JLabel" visibility="private"/>
+        <Field name="day" type="JLabel" visibility="private"/>
+        <Field name="Time" type="JLabel" visibility="private"/>
+        <Field name="describtion" type="JLabel" visibility="private"/>
+        <Field name="limitmember" type="JLabel" visibility="private"/>
+        <Field name="back" type="JButton" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="actionPerformed" returnType="void" visibility="public">
+          <Argument type="ActionEvent" name="e"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Common" package="Admain" visibility="public" xPosition="238.0" yPosition="899.0">
+      <Fields>
+        <Field name="id" type="TextField" visibility="protected"/>
+        <Field name="fname" type="TextField" visibility="protected"/>
+        <Field name="lname" type="TextField" visibility="protected"/>
+        <Field name="g" type="TextField" visibility="protected"/>
+        <Field name="clas" type="TextField" visibility="protected"/>
+        <Field name="member" type="TextField" visibility="protected"/>
+        <Field name="add" type="JButton" visibility="protected"/>
+        <Field name="Edit" type="JButton" visibility="protected"/>
+        <Field name="Deleat" type="JButton" visibility="protected"/>
+        <Field name="row" type="Object[]" visibility="protected"/>
+        <Field name="p" type="Panal" visibility="protected"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods/>
+    </Class>
+    <Class name="Traier" package="Admain" visibility="public" xPosition="202.0" yPosition="1356.0">
+      <Fields>
+        <Field name="mode1" type="DefaultTableModel" visibility="private"/>
+        <Field name="l1" type="JLabel" visibility="private"/>
+        <Field name="Id" type="JLabel" visibility="private"/>
+        <Field name="Frist_name" type="JLabel" visibility="private"/>
+        <Field name="Last_name" type="JLabel" visibility="private"/>
+        <Field name="age" type="JLabel" visibility="private"/>
+        <Field name="classes" type="JLabel" visibility="private"/>
+        <Field name="Members" type="JLabel" visibility="private"/>
+        <Field name="table" type="JTable" visibility="private"/>
+        <Field name="s1" type="JScrollPane" visibility="package"/>
+        <Field name="back" type="JButton" visibility="package"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="actionPerformed" returnType="void" visibility="public">
+          <Argument type="ActionEvent" name="e"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="FramAll" package="CommonAdmain_Member" visibility="public" xPosition="1956.0" yPosition="2378.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="int" name="x"/>
+          <Argument type="int" name="y"/>
+          <Argument type="String" name="title"/>
+        </Constructor>
+      </Constructors>
+      <Methods/>
+    </Class>
+    <Class name="Information" package="CommonAdmain_Member" visibility="public" xPosition="577.0" yPosition="957.0">
+      <Fields>
+        <Field name="pan" type="Panal" visibility="private"/>
+        <Field name="view_all" type="JButton" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="actionPerformed" returnType="void" visibility="public">
+          <Argument type="ActionEvent" name="ae"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Panal" package="CommonAdmain_Member" visibility="public" xPosition="1990.0" yPosition="57.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="int" name="x"/>
+          <Argument type="int" name="y"/>
+        </Constructor>
+      </Constructors>
+      <Methods/>
+    </Class>
+    <Class name="Sign" package="CommonAdmain_Member" visibility="public" xPosition="2597.0" yPosition="972.0">
+      <Fields>
+        <Field name="nam" type="JLabel" visibility="private"/>
+        <Field name="name_t" type="JTextField" visibility="private"/>
+        <Field name="password_t" type="JPasswordField" visibility="private"/>
+        <Field name="sign" type="JButton" visibility="private"/>
+        <Field name="p" type="Panal" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="actionPerformed" returnType="void" visibility="public">
+          <Argument type="ActionEvent" name="ae"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="User" package="database" visibility="public" xPosition="3763.0" yPosition="2113.0">
+      <Fields>
+        <Field name="con" type="Connection" visibility="package" isStatic="true"/>
+        <Field name="stat" type="Statement" visibility="package" isStatic="true"/>
+        <Field name="res" type="ResultSet" visibility="package" isStatic="true"/>
+        <Field name="p" type="PreparedStatement" visibility="package" isStatic="true"/>
+        <Field name="resUpdate" type="int" visibility="package" isStatic="true"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="connect" returnType="Connection" visibility="public" isStatic="true"/>
+        <Method name="insert_user" returnType="void" visibility="public" isStatic="true">
+          <Argument type="int" name="id"/>
+          <Argument type="String" name="name"/>
+          <Argument type="int" name="age"/>
+          <Argument type="int" name="phone"/>
+          <Argument type="String" name="name_class"/>
+          <Argument type="String" name="mem_ship"/>
+          <Argument type="String" name="trainer"/>
+        </Method>
+        <Method name="getUser" returnType="ArrayList&lt;User_data&gt;" visibility="public" isStatic="true"/>
+        <Method name="Search_id" returnType="void" visibility="public" isStatic="true"/>
+        <Method name="update" returnType="void" visibility="public" isStatic="true"/>
+        <Method name="delet" returnType="void" visibility="public" isStatic="true"/>
+        <Method name="getClassName" returnType="ArrayList&lt;User_data&gt;" visibility="public" isStatic="true"/>
+        <Method name="getMemberShip" returnType="ArrayList&lt;User_data&gt;" visibility="public" isStatic="true"/>
+        <Method name="getTrainer" returnType="ArrayList&lt;User_data&gt;" visibility="public" isStatic="true"/>
+      </Methods>
+    </Class>
+    <Class name="User_data" package="domainData" visibility="public" xPosition="3046.0" yPosition="2070.0">
+      <Fields>
+        <Field name="name" type="String" visibility="private"/>
+        <Field name="id" type="int" visibility="package"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="int" name="id"/>
+          <Argument type="String" name="name"/>
+          <Argument type="int" name="age"/>
+          <Argument type="int" name="phone"/>
+          <Argument type="String" name="name_class"/>
+          <Argument type="String" name="membership"/>
+          <Argument type="String" name="trainer"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getTrainer" returnType="String" visibility="public"/>
+        <Method name="setTrainer" returnType="void" visibility="public">
+          <Argument type="String" name="trainer"/>
+        </Method>
+        <Method name="getId" returnType="int" visibility="public"/>
+        <Method name="setId" returnType="void" visibility="public">
+          <Argument type="int" name="id"/>
+        </Method>
+        <Method name="getName" returnType="String" visibility="public"/>
+        <Method name="setName" returnType="void" visibility="public">
+          <Argument type="String" name="name"/>
+        </Method>
+        <Method name="getAge" returnType="int" visibility="public"/>
+        <Method name="setAge" returnType="void" visibility="public">
+          <Argument type="int" name="age"/>
+        </Method>
+        <Method name="getPhone" returnType="int" visibility="public"/>
+        <Method name="setPhone" returnType="void" visibility="public">
+          <Argument type="int" name="phone"/>
+        </Method>
+        <Method name="getName_class" returnType="String" visibility="public"/>
+        <Method name="setName_class" returnType="void" visibility="public">
+          <Argument type="String" name="name_class"/>
+        </Method>
+        <Method name="getMembership" returnType="String" visibility="public"/>
+        <Method name="setMembership" returnType="void" visibility="public">
+          <Argument type="String" name="membership"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="GymProject" package="gymproject" visibility="public" xPosition="594.0" yPosition="2065.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Add_View" package="Member" visibility="public" xPosition="2312.0" yPosition="880.0">
+      <Fields>
+        <Field name="pan" type="Panal" visibility="private"/>
+        <Field name="b_add" type="JButton" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="actionPerformed" returnType="void" visibility="public">
+          <Argument type="ActionEvent" name="ae"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Member" package="Member" visibility="public" xPosition="2046.0" yPosition="880.0">
+      <Fields>
+        <Field name="pan" type="Panal" visibility="private"/>
+        <Field name="id_L" type="JLabel" visibility="private"/>
+        <Field name="id_t" type="JTextField" visibility="public" isStatic="true"/>
+        <Field name="b_add" type="JButton" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="actionPerformed" returnType="void" visibility="public">
+          <Argument type="ActionEvent" name="ae"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="ClassName" package="Search" visibility="public" xPosition="1461.0" yPosition="880.0">
+      <Fields>
+        <Field name="pan" type="Panal" visibility="private"/>
+        <Field name="back" type="JButton" visibility="private"/>
+        <Field name="name_class_l" type="JLabel" visibility="private"/>
+        <Field name="name_class_t" type="JTextField" visibility="public" isStatic="true"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="actionPerformed" returnType="void" visibility="public">
+          <Argument type="ActionEvent" name="ae"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="MemberShipName" package="Search" visibility="public" xPosition="848.0" yPosition="889.0">
+      <Fields>
+        <Field name="pan" type="Panal" visibility="private"/>
+        <Field name="back" type="JButton" visibility="private"/>
+        <Field name="memberShip" type="JLabel" visibility="private"/>
+        <Field name="memberShip_t" type="JTextField" visibility="public" isStatic="true"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="actionPerformed" returnType="void" visibility="public">
+          <Argument type="ActionEvent" name="ae"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="TrainerName" package="Search" visibility="public" xPosition="1736.0" yPosition="875.0">
+      <Fields>
+        <Field name="pan" type="Panal" visibility="private"/>
+        <Field name="back" type="JButton" visibility="private"/>
+        <Field name="name_trainer_l" type="JLabel" visibility="private"/>
+        <Field name="name_trainer_t" type="JTextField" visibility="public" isStatic="true"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="actionPerformed" returnType="void" visibility="public">
+          <Argument type="ActionEvent" name="ae"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="FillAllMember" package="Table_Data" visibility="public" xPosition="3153.0" yPosition="1406.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods/>
+    </Class>
+    <Class name="FillMemberShip" package="Table_Data" visibility="public" xPosition="4043.0" yPosition="908.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods/>
+    </Class>
+    <Class name="FillTable" package="Table_Data" visibility="public" xPosition="3301.0" yPosition="1129.0">
+      <Fields>
+        <Field name="x" type="int" visibility="protected"/>
+        <Field name="table" type="JTable" visibility="protected"/>
+        <Field name="scrol" type="JScrollPane" visibility="protected"/>
+        <Field name="line" type="String" visibility="protected"/>
+        <Field name="data" type="Object" visibility="protected"/>
+        <Field name="table_of_data" type="ArrayList&lt;domainData.User_data&gt;" visibility="protected"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="Show_table" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="FillTrainer" package="Table_Data" visibility="public" xPosition="3798.0" yPosition="1156.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods/>
+    </Class>
+    <Class name="FillUnderClass" package="Table_Data" visibility="public" xPosition="3487.0" yPosition="912.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods/>
+    </Class>
+    <Class name="FrameViewAllMember" package="Table_Data" visibility="public" xPosition="2865.0" yPosition="898.0">
+      <Fields>
+        <Field name="pan" type="Panal" visibility="private"/>
+        <Field name="back" type="JButton" visibility="private"/>
+        <Field name="view" type="FillAllMember" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="actionPerformed" returnType="void" visibility="public">
+          <Argument type="ActionEvent" name="ae"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="FramViewTableTrainer" package="Table_Data" visibility="public" xPosition="4352.0" yPosition="1116.0">
+      <Fields>
+        <Field name="viewTable" type="FillTrainer" visibility="private"/>
+        <Field name="back" type="JButton" visibility="private"/>
+        <Field name="pan" type="Panal" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="actionPerformed" returnType="void" visibility="public">
+          <Argument type="ActionEvent" name="ae"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="tableClass" package="Table_Data" visibility="public" xPosition="3153.0" yPosition="832.0">
+      <Fields>
+        <Field name="view_under_class" type="FillUnderClass" visibility="private"/>
+        <Field name="back" type="JButton" visibility="private"/>
+        <Field name="pan" type="Panal" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="actionPerformed" returnType="void" visibility="public">
+          <Argument type="ActionEvent" name="ae"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="TableMemberShip" package="Table_Data" visibility="public" xPosition="4437.0" yPosition="875.0">
+      <Fields>
+        <Field name="viewTable" type="FillMemberShip" visibility="private"/>
+        <Field name="back" type="JButton" visibility="private"/>
+        <Field name="pan" type="Panal" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="actionPerformed" returnType="void" visibility="public">
+          <Argument type="ActionEvent" name="ae"/>
+        </Method>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <HasRelation name="viewTable" source="Table_Data.TableMemberShip" target="Table_Data.FillMemberShip" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="pan" source="CommonAdmain_Member.Information" target="CommonAdmain_Member.Panal" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="viewTable" source="Table_Data.FramViewTableTrainer" target="Table_Data.FillTrainer" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="CommonAdmain_Member.Information" target="CommonAdmain_Member.FramAll"/>
+    <IsRelation name="is" source="Table_Data.tableClass" target="CommonAdmain_Member.FramAll"/>
+    <IsRelation name="is" source="Search.TrainerName" target="CommonAdmain_Member.FramAll"/>
+    <IsRelation name="is" source="Admain.Common" target="CommonAdmain_Member.FramAll"/>
+    <IsRelation name="is" source="Table_Data.FillUnderClass" target="Table_Data.FillTable"/>
+    <IsRelation name="is" source="Table_Data.FramViewTableTrainer" target="CommonAdmain_Member.FramAll"/>
+    <IsRelation name="is" source="Table_Data.TableMemberShip" target="CommonAdmain_Member.FramAll"/>
+    <IsRelation name="is" source="Member.Member" target="CommonAdmain_Member.FramAll"/>
+    <IsRelation name="is" source="Table_Data.FrameViewAllMember" target="CommonAdmain_Member.FramAll"/>
+    <IsRelation name="is" source="Admain.Classes" target="Admain.Common"/>
+    <HasRelation name="pan" source="Member.Add_View" target="CommonAdmain_Member.Panal" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="Admain.Traier" target="Admain.Common"/>
+    <HasRelation name="view_under_class" source="Table_Data.tableClass" target="Table_Data.FillUnderClass" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="pan" source="Search.ClassName" target="CommonAdmain_Member.Panal" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="Search.ClassName" target="CommonAdmain_Member.FramAll"/>
+    <HasRelation name="pan" source="Search.TrainerName" target="CommonAdmain_Member.Panal" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="p" source="Admain.Common" target="CommonAdmain_Member.Panal" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="pan" source="Table_Data.FrameViewAllMember" target="CommonAdmain_Member.Panal" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="Admain.Admin" target="CommonAdmain_Member.FramAll"/>
+    <IsRelation name="is" source="CommonAdmain_Member.Sign" target="CommonAdmain_Member.FramAll"/>
+    <IsRelation name="is" source="Search.MemberShipName" target="CommonAdmain_Member.FramAll"/>
+    <HasRelation name="view" source="Table_Data.FrameViewAllMember" target="Table_Data.FillAllMember" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="Member.Add_View" target="CommonAdmain_Member.FramAll"/>
+    <HasRelation name="p1" source="Admain.Admin" target="CommonAdmain_Member.Panal" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="p" source="CommonAdmain_Member.Sign" target="CommonAdmain_Member.Panal" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="pan" source="Search.MemberShipName" target="CommonAdmain_Member.Panal" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="Table_Data.FillMemberShip" target="Table_Data.FillTable"/>
+    <HasRelation name="pan" source="Table_Data.FramViewTableTrainer" target="CommonAdmain_Member.Panal" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="database.User" target="domainData.User_data" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="Table_Data.FillTrainer" target="Table_Data.FillTable"/>
+    <IsRelation name="is" source="Table_Data.FillAllMember" target="Table_Data.FillTable"/>
+    <HasRelation name="pan" source="Table_Data.TableMemberShip" target="CommonAdmain_Member.Panal" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="pan" source="Member.Member" target="CommonAdmain_Member.Panal" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="pan" source="Table_Data.tableClass" target="CommonAdmain_Member.Panal" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
